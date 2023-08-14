@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,    
