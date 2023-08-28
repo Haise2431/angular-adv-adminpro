@@ -1,6 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,6 +15,7 @@ import { Grafica1Component } from './grafica1/grafica1.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 
@@ -29,7 +30,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     PagesComponent,
     AccountSettingsComponent,
     PromesasComponent,
-    RxjsComponent
+    RxjsComponent,
+    PerfilComponent
   ],  
   schemas:[
     CUSTOM_ELEMENTS_SCHEMA
@@ -48,7 +50,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     SharedModule,
     AppRoutingModule,
     FormsModule,
-    ComponentsModule    
+    ComponentsModule,
+    ReactiveFormsModule   
   ]
 })
 export class PagesModule { }
